@@ -19,3 +19,10 @@ https://api.openweathermap.org/data/2.5/weather
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 ##### Current location will not work, if u are nog using a secured url, make sure ur url is https//: not http//:
+
+##### Github page url:
+https://amos-isaiah-tizhe.github.io/weather/
+https
+##### Github repository url:
+https://github.com/amos-isaiah-tizhe/weather
+##### Current location will not work, if u are nog using a secured url, make sure ur url is https//: not http//:
