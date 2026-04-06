@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #004000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-box button {
+    background: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* Location button */
+.location-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Weather info */
+.weather-info {
+    margin-top: 10px;
+}
+
+#weatherIcon {
+    width: 80px;
+}
+
+#temperature {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#description {
+    text-transform: capitalize;
+    opacity: 0.9;
+}
