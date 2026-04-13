@@ -15,7 +15,7 @@ body {
 
 /* Container */
 .container {
-    width: 350px;
+    width: auto;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -90,3 +90,133 @@ button:hover {
     text-transform: capitalize;
     opacity: 0.9;
 }
+
+#forecast {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  background: #004000;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.right-info, .left-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Humidity and wind speed style*/
+
+.humidity-windSpeed {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.humidity-windSpeed p {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: #004000;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 8px 6px;
+  color: #e8f4fd;
+  font-size: 0.82rem;
+  font-weight: 500;
+  backdrop-filter: blur(12px);
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.humidity-windSpeed p:hover {
+  background: rgba(255, 255, 255, 0.13);
+  transform: translateY(-2px);
+}
+
+.humidity-windSpeed i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.fa-droplet {
+  background: rgba(56, 182, 255, 0.18);
+  color: #38b6ff;
+  box-shadow: 0 0 14px rgba(56, 182, 255, 0.25);
+}
+
+.fa-wind {
+  background: rgba(100, 220, 200, 0.15);
+  color: #64dcc8;
+  box-shadow: 0 0 14px rgba(100, 220, 200, 0.2);
+}
+
+.fa-temperature-half {
+  background: rgba(100, 220, 150, 0.15);
+  color: #D4E7E4;
+  box-shadow: 0 0 14px rgba(100, 220, 150, 0.2);}
+
+.stat-value {
+  font-size: 1.10rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/*Error toast message*/
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Types */
+.toast-error {
+  background: #e74c3c;
+}
+
+.toast-success {
+  background: #2ecc71;
+}
+
+.toast-info {
+  background: #3498db;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    }
